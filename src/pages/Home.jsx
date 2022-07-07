@@ -4,31 +4,31 @@ import axios from 'axios'
 import { useEffect, useState } from 'react';
 
 const Home = () => {
-  const [tutorials, setTutorials] = useState()
-  const url ='https://axios-example-cw.herokuapp.com/api/tutorials';
-  const getTutorials = async ()=>{
-    try {
-    const { data } = await axios.get(url)
-    setTutorials(data)
-    } catch (error) {
+  // const [tutorials, setTutorials] = useState()
+  // const url ='https://axios-example-cw.herokuapp.com/api/tutorials';
+  // const getTutorials = async ()=>{
+  //   try {
+  //   const { data } = await axios.get(url)
+  //   setTutorials(data)
+  //   } catch (error) {
     
-  };
-  useEffect(() => {
+  // };
+  // useEffect(() => {
     
-    getTutorials();
+  //   getTutorials();
     
-  }, []);
+  // }, []);
 
-  const addTutorial = ()=>{
+  // const addTutorial = ()=>{
 
-  }
+  // }
   
 
   return (
     <>
-      <AddTutorial addTutorial={addTutorial}/>
+      {/* <AddTutorial addTutorial={addTutorial}/>
       {/* <TutorialList {...tutorials} /> */}
-      <TutorialList tutorials={tutorials} />
+      <TutorialList tutorials={tutorials} /> */}
     </>
   );
 };
