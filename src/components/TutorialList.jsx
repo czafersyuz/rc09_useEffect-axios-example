@@ -1,7 +1,7 @@
 import { FaEdit } from 'react-icons/fa';
 import { AiFillDelete } from 'react-icons/ai';
 
-const TutorialList = () => {
+const TutorialList = ({ tutorials }) => {
   //? Test data
   let tutorials = [
     {
